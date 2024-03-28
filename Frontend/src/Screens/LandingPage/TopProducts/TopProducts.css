@@ -1,0 +1,150 @@
+.top_products_box{
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+    margin: 0 auto;
+
+    padding-bottom: 5em;
+
+
+}
+
+.top_products_header_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.top_products_heading{
+    font-size: 5em;
+    font-weight: 600;
+
+}
+
+.top_products_heading_btn{
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    font-size: 3em;
+
+}
+
+.top_products_heading_btn:hover{
+    color: var(--color-main);
+    cursor: pointer;
+
+    transition: 0.50s;
+}
+
+.top_products_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 4em;
+
+}
+
+.top_products_infocard{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 18px;
+
+    padding: 5em 2em;
+    margin-bottom: 4em;
+
+    background-color: #F2F2F2;
+    cursor: pointer;
+
+}
+
+
+.top_products_infocard:hover{
+    box-shadow: 0px 0px 20px 1px var(--color-main);
+    
+    /* background-color: var(--color-main); */
+    transform: scale(1.03);
+    transition: 0.50s;
+}
+
+.top_products_infocard_img{
+    width: 95%;
+
+}
+
+.top_products_infocard_content_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+
+    padding-top: 2em;
+
+}
+
+.top_products_infocard_title{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.top_products_infocard_price{
+    color: #75869C;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.top_products_shop_now_btn{
+    margin: 0 auto;
+    width: 200px;
+    padding: 0.8em 2em;
+
+    font-size: 2rem;
+    border-radius: 30px;
+    border: none;
+
+    background-color: var(--color-main);
+    border: 1px solid var(--color-main);
+
+    color: white;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+}
+
+.top_products_shop_now_btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Initial position from left */
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: left 0.3s; /* Transition for left property */
+    z-index: -1; /* Put the overlay behind the button */
+}
+  
+.top_products_shop_now_btn:hover::before {
+    left: 0; /* On hover, move the overlay to fill the button from left to right */
+}
+  
+.top_products_shop_now_btn:hover {
+    color: var(--color-main); /* Change text color on hover */
+    border: 1px solid var(--color-main);
+    cursor: pointer;
+}
+
+/* .top_products_shop_now_btn:hover{
+    color: var(--color-main);
+    background-color: white;
+    border: 1px solid var(--color-main);
+    cursor: pointer;
+
+    transition: 0.50s;
+} */

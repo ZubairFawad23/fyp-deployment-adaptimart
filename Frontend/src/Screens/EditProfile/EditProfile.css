@@ -1,0 +1,158 @@
+.edit_profile_box{
+    margin-top: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 500px;
+    margin: 20em auto 10em auto;
+
+    /* border: 2px solid black; */
+    box-shadow: 0 0 20px 0px;
+
+}
+
+.edit_profile_heading{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 1em;
+
+}
+
+.edit_profile_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5em;
+}
+
+.edit_profile_input_container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4em;
+}
+
+.edit_profile_input_label {
+  color: var(--neutral-black-black-600, #4d5464);
+
+  /* Text M/Medium */
+  font-family: var(--Roboto);
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.07px;
+  padding-bottom: 0.5em;
+}
+
+.edit_profile_input {
+  padding: 0.8em 1em;
+  background-color: #f9f9fc;
+  border-radius: 8px;
+  width: 100%;
+  /* margin-bottom: 2em; */
+  
+
+  border: 1px solid gray;
+}
+
+.edit_profile_input:focus-visible{
+    border: 2px solid var(--color-main);
+}
+
+.edit_profile_media_image_upload_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.edit_profile_media_image_upload_input {
+    padding: 0.8em 1em;
+    background-color: #f9f9fc;
+    border-radius: 8px;
+    /* margin-top: 2em; */
+    width: 100%;
+  
+    border: 1px solid gray;
+}
+  
+.edit_profile_btn_container{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.edit_profile_btn{
+    width: 49%;
+    padding: 1em 3em;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    cursor: pointer;
+
+}
+
+.edit_profile_cancel_btn{
+    background-color: var(--color-cancel-btn);
+    border: 1px solid var(--color-cancel-btn);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+}
+
+.edit_profile_cancel_btn::before {
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: -100%; 
+    width: 100%; 
+    height: 100%; 
+    background-color: white; 
+    transition: left 0.3s; 
+    z-index: -1; 
+}
+
+.edit_profile_cancel_btn:hover::before {
+    left: 0; 
+}
+
+.edit_profile_cancel_btn:hover {
+    color: var(--color-cancel-btn); 
+}
+
+
+.edit_profile_update_btn{
+    background-color: var(--color-main);
+    border: 1px solid var(--color-main);
+   
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.edit_profile_update_btn::before {
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: -100%; 
+    width: 100%; 
+    height: 100%; 
+    background-color: white; 
+    transition: left 0.3s; 
+    z-index: -1; 
+}
+
+.edit_profile_update_btn:hover::before {
+    left: 0; 
+}
+
+.edit_profile_update_btn:hover {
+    color: var(--color-main); 
+}
+
+

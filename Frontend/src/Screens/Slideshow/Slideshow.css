@@ -1,0 +1,82 @@
+/* Slide container */
+.landing_page_slideshow_box {
+width: 100%;
+margin-top: 8%;
+/* height: 100vh; */
+/* margin: 0 auto; */
+/* height: 300px; Adjust height as needed */
+}
+
+.mySwiper{
+    width: 80%;
+    --swiper-pagination-color: var(--color-main);
+
+}
+.landing_page_swiper_card{
+    height: 550px;
+}
+
+.landing_page_infocard{
+    height: inherit;
+}
+/* Background image */
+.landing_page_infocard_bg_img {
+width: 100%;
+height: 100%;
+object-fit: cover; /* Ensure the image covers the entire slide */
+border-radius: 18px;
+}
+
+/* Container for text and button */
+.landing_page_infocard_content {
+position: absolute;
+bottom: 20px; /* Adjust as needed */
+left: 20px; /* Adjust as needed */
+color: white; /* Text color */
+font-family: var(--Montserrat);
+}
+
+/* Text style */
+.landing_page_infocard_title {
+font-size: 7.4rem; /* Adjust font size as needed */
+font-weight: bold; /* Adjust font weight as needed */
+margin-bottom: 1em; /* Adjust margin as needed */
+width: 100%;
+}
+
+/* Button style */
+.landing_page_infocard_btn {
+    position: relative;
+    font-size: 1.5rem;
+    background-color: var(--color-main); /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px;
+    border-radius: 25px; /* Adjust border radius as needed */
+    cursor: pointer; /* Add cursor pointer */
+    width: 200px;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1; /* Set a z-index to ensure the button is above the overlay */
+    border: 1px solid var(--color-main);
+}
+
+/* Button hover effect */
+.landing_page_infocard_btn::before {
+    content: ''; /* Add content to pseudo-element */
+    position: absolute; /* Set position absolute */
+    top: 0; /* Position from top */
+    left: -100%; /* Initially position outside the button */
+    width: 100%; /* Set width to cover the button */
+    height: 100%; /* Set height to cover the button */
+    background-color: white; /* Background color */
+    transition: left 0.3s; /* Add transition for left property */
+    z-index: -1; /* Set a z-index to ensure the overlay is below the button */
+}
+
+.landing_page_infocard_btn:hover::before {
+    left: 0; /* On hover, move the overlay to fill the button from left to right */
+}
+
+.landing_page_infocard_btn:hover {
+    color: var(--color-main); /* Change text color on hover */
+}

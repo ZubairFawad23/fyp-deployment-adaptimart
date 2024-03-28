@@ -1,0 +1,77 @@
+.shippingpolicy_container{
+    width: 60vw;
+    height: 90vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5em 8em;
+    /* border: 2px solid red; */
+}
+
+.shippingpolicy_container:focus-visible{
+    outline: none;
+}
+
+.shippingpolicy_modal_Overlay{
+
+    border: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.shippingpolicy_box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* overflow-y: auto;
+    overflow: hidden;
+    scroll-behavior: smooth; */
+    max-height: 100%; /* Set a maximum height for the div */
+    overflow-y: auto; /* Enable vertical scrolling */
+
+
+}
+
+.shippingpolicy_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* padding: 2em 4em; */
+
+}
+
+.shippingpolicy_title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5em;
+
+}
+
+.shippingpolicy_close_btn{
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 1em;
+
+}
+
+.shippingpolicy_content{
+    font-size: 1.5rem;
+
+}
+
+.shippingpolicy_content_headings{
+    font-size: 2rem;
+    font-weight: 600;
+}

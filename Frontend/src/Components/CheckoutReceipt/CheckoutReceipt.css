@@ -1,0 +1,95 @@
+.checkout_receipt{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    padding: 0 3em;
+
+}
+
+.checkout_receipt_promo_container{
+    display: flex;
+    align-items: center;
+
+}
+
+.checkout_receipt_promo_input{
+    width: 300px;
+    padding: 1em 2em;
+    border-radius: 30px;
+
+    border: 1px solid black;
+
+    
+
+}
+
+.checkout_receipt_promo_input:focus-visible{
+    border: 2px solid var(--color-main) !important;
+}
+.checkout_receipt_promo_btn{
+    margin-left: 2em;
+
+    padding: 1em 3em;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--color-shipping-btn);
+    border: 1px solid var(--color-shipping-btn);
+
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+
+}
+
+.checkout_receipt_promo_btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Initial position from left */
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: left 0.3s; /* Transition for left property */
+    z-index: -1; /* Put the overlay behind the button */
+}
+
+.checkout_receipt_promo_btn:hover::before {
+    left: 0; /* On hover, move the overlay to fill the button from left to right */
+}
+
+.checkout_receipt_promo_btn:hover {
+    color: var(--color-main); /* Change text color on hover */
+    border: 1px solid var(--color-main);
+    cursor: pointer;
+}
+
+.checkout_receipt_subtotal_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.checkout_receipt_subtotal_text{
+    font-size: 2.5rem;
+    font-weight: 600;
+
+}
+
+.checkout_receipt_subtotal_amount{
+    font-size: 1.8rem;
+
+}
+
+.checkout_receipt_total_text{
+
+    font-size: 4rem;
+    font-weight: 700;
+
+}
+
+.checkout_receipt_total_amount{
+    font-size: 3.5rem;
+    font-weight: 500;
+}

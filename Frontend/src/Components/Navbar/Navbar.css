@@ -1,0 +1,107 @@
+.navbar_main_container{
+  /* border: 2px solid red; */
+
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+
+  padding: 3em 6em;
+
+  position: fixed;
+  z-index: 995;
+  background-color: white;
+
+  top: 0;
+
+  box-shadow: 0 1px 10px 0px black;
+
+
+}
+
+.navbar_left_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  /* border: 2px solid yellow; */
+
+}
+
+.navbar_logo_img{
+  width: 200px;
+
+}
+
+.navbar_links_container{
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.navbar_link{
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-family: var(--Montserrat);
+  font-weight: 600;
+
+}
+
+.navbar_right_container{
+  /* width: 25%; */
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+}
+
+.dropdown_menu {
+  position: absolute; /* Position the dropdown menu absolutely */
+  top: calc(100% + 30px); /* Position it below the icon */
+  left: -60px; /* Align it with the left edge of the icon */
+  background-color: white; /* Example background color */
+  border: 1px solid #ccc; /* Example border */
+  padding: 5px; /* Example padding */
+  z-index: 1000; /* Ensure it's above other content */
+  border-radius: 8px;
+}
+
+.dropdown_menu ul {
+  list-style: none; /* Remove default list styles */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.dropdown_menu li {
+  padding: 10px 5px; /* Example padding */
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  width: 150px;
+}
+
+.dropdown_menu li:hover{
+  color: var(--color-main);
+}
+/* 
+.navbar_icon_img svg path{
+  fill: white;
+}
+.navbar_icon_img:hover svg path{
+  fill: var(--color-main);
+} */
+
+.navbar_icon_img{
+  width: 25px;
+  margin-right: 3em;
+
+}
+
+.navbar_icon_img:hover{
+  cursor: pointer;
+
+}

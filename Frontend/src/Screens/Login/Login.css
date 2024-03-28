@@ -1,0 +1,16 @@
+.login_signup_text{
+    text-align: center;
+    padding: 2em 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.login_signup_text_link{
+    color: var(--color-main);
+    cursor: pointer;
+}
+
+.login_signup_text_link:hover{
+    text-decoration: underline;
+
+}

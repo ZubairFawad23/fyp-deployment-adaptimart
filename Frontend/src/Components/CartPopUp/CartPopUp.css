@@ -1,0 +1,164 @@
+.cart_popup_container{
+    width: 30vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.cart_popup_container:focus-visible{
+    outline: none;
+}
+.modal_Overlay{
+    border: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart_popup_box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+
+}
+
+.cart_popup_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2em 4em;
+
+}
+
+.cart_popup_title{
+    font-size: 2.5rem;
+    font-weight: 700;
+
+}
+
+.cart_popup_close_btn{
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+
+.cart_popup_progress_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 4em;
+
+}
+
+.cart_popup_progress_text{
+    font-size: 1.5rem;
+
+}
+
+.progress_bar_container {
+    width: 100%;
+    /* background-color: #f0f0f0; */
+    border: 2px solid black;
+    border-radius: 30px;
+    margin-top: 10px;
+    overflow: hidden; /* Ensure the progress bar doesn't overflow */
+}
+  
+.progress_bar {
+    height: 20px;
+    background-color: var(--color-main); /* Green color for the progress */
+}
+
+.cart_popup_footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2em 4em;
+    margin-bottom: 5em;
+
+}
+
+
+.cart_popup_subtotal_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.cart_popup_subtotal_heading{
+    
+    font-size: 2.5rem;
+    font-weight: 700;
+    
+}
+
+.cart_popup_subtotal_amount{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.cart_popup_checkout_btn{
+
+    padding: 1em 4em;
+    background-color: var(--color-main);
+    border: none;
+    border-radius: 30px;
+    width: 80%;
+    color: white;
+
+    margin-top: 1em;
+    cursor: pointer;
+
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: 1px solid var(--color-main);
+
+
+}
+
+.cart_popup_checkout_btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Initial position from left */
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: left 0.3s; /* Transition for left property */
+    z-index: -1; /* Put the overlay behind the button */
+}
+
+.cart_popup_checkout_btn:hover::before {
+    left: 0; /* On hover, move the overlay to fill the button from left to right */
+}
+
+.cart_popup_checkout_btn:hover {
+    color: var(--color-main); /* Change text color on hover */
+    border: 1px solid var(--color-main);
+    cursor: pointer;
+}
+.blurEffect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px); 
+    z-index: 999; 
+}

@@ -1,0 +1,175 @@
+.team_intro_box{
+    /* padding-top: 10%; */
+    padding: 10% 0% 0 0%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10%;
+}
+
+.team_title{
+    color: black;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 7em;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 5%;
+    /* padding: 0.2em 0.5em;
+    border-radius: 100px;
+    text-align: center; */
+    /* background-color: var(--color-main); */
+}
+
+.team_info_card_container{
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 100px;
+}
+
+/* CSS for max-width 767px */
+@media (max-width: 767px) {
+    .team_intro_box {
+      padding-top: 5%;
+      padding: 5% 0% 0 0%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center horizontally */
+      padding-bottom: 10%;
+    }
+  
+    .team_title {
+      color: #081e56;
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-size: 4rem; /* Adjust font size for the title */
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+      text-align: center;
+    }
+  
+    .team_info_card_container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 50px; /* Adjust the gap between the cards */
+      align-items: center; /* Center horizontally */
+      justify-content: center; /* Center vertically */
+    }
+  }
+  
+
+  .team_infocard {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+  
+    /* border: 2px solid hotpink; */
+  }
+  
+  .team_info_reverse {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    width: 100%;
+  
+    /* border: 2px solid hotpink; */
+  }
+  
+  .team_infocard_img {
+    /* background-color: yellow; */
+    /* width: 35%; */
+    height: 350px;
+  }
+  
+  .team_content_container {
+    /* background-color: aqua; */
+    width: 50%;
+    padding-top: 3%;
+  }
+  .team_infocard_name {
+    color: #1e1e1e;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 100%;
+    padding-bottom: 1em;
+  }
+  
+  .team_points_container {
+    /* border: 2px solid khaki; */
+    width: 100%;
+  }
+  
+  .team_intro_point {
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    /* padding: 0.7% 0; */
+    /* line-height: ; */
+    /* line-height: 2px; */
+    /* font-size: 2em; */
+  }
+  
+  .team_intro_point::marker {
+    color: #021445;
+  }
+  /* CSS for max-width 767px */
+  @media (max-width: 767px) {
+    .team_infocard {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 30px; /* Adjust spacing between cards */
+    }
+  
+    .team_info_reverse {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 30px;
+      /* Stack in reverse order */
+    }
+  
+    .team_infocard_img {
+      width: 80%; /* Adjust image width */
+    }
+  
+    .team_content_container {
+      width: 80%; /* Adjust content container width */
+      padding-top: 3%;
+    }
+  
+    .team_infocard_name {
+      font-size: 3.2rem; /* Adjust font size for name */
+      padding-bottom: 1em; /* Adjust spacing for name */
+      text-align: center; /* Center name text */
+    }
+  
+    .team_points_container {
+      width: 100%;
+    }
+  
+    .team_intro_point {
+      font-size: 1.6rem; /* Adjust font size for intro points */
+      padding: 5px 0; /* Adjust spacing for intro points */
+    }
+  
+    .team_intro_point::marker {
+      color: #021445;
+    }
+  }
+  

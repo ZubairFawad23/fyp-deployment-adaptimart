@@ -1,0 +1,77 @@
+
+.categories_page_top_products_box{
+    width: 80%;
+    margin: 0 auto;
+    padding: 5em 0;
+}
+
+
+.categories_page_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.categories_page_header_title{
+    font-size: 5em;
+    font-weight: 600;
+}
+
+.categories_page_header_input{
+    border: none;
+    border-bottom: 2px solid #02021D;
+    padding: 0.5em;
+    width: 250px;
+    font-family: var(--Montserrat);
+
+}
+
+
+.categories_page_header_input::placeholder{
+    color: grey;
+}
+
+.categories_page_pagination_buttons{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.categories_page_pagination_btn{
+    border: none;
+    padding: 1em 3em;
+    border-radius: 30px;
+    background-color: var(--color-main);
+    color: white;
+    font-weight: 600;
+    border: 1px solid var(--color-main);
+    width: 150px;
+    margin-left: 2em;
+
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+
+.categories_page_pagination_btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Initial position from left */
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: left 0.3s; /* Transition for left property */
+    z-index: -1; /* Put the overlay behind the button */
+}
+
+.categories_page_pagination_btn:hover::before {
+    left: 0; /* On hover, move the overlay to fill the button from left to right */
+}
+
+.categories_page_pagination_btn:hover {
+    color: var(--color-main); /* Change text color on hover */
+    border: 1px solid var(--color-main);
+    cursor: pointer;
+}

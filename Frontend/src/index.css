@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@600&family=Plus+Jakarta+Sans:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --Jakarta: "Plus Jakarta Sans", Sans;
+  --Montserrat: "Montserrat", sans-serif;
+  --Poppins: "Poppins", sans;
+  --Roboto: "Roboto", sans;
+
+  /* --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%); */
+
+  --color-bg: #000622;
+  --color-footer: #031b34;
+  --color-blog: #042c54;
+  --color-text: #81afdd;
+  --color-subtext: #ff8a71;
+  --color-main: #18abb1;
+  --color-shipping-btn: #C1F651;
+  --color-cancel-btn: rgb(241, 39, 39);
+}

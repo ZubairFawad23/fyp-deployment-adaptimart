@@ -1,0 +1,46 @@
+.everyday_box{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    padding: 5em 0;
+
+
+}
+
+.everyday_heading{
+    font-size: 5rem;
+    font-weight: 600;
+
+
+}
+
+.everyday_adaptimart_handle{
+
+    font-size: 2.2rem;
+    padding: 1em 0;
+
+    font-weight: 500;
+
+}
+
+.everyday_pics_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.everyday_img{
+    width: 23.5%;
+
+}
+
+.everyday_img:hover{
+    transform: scale(1.03);
+    transition: 0.5s;
+}
