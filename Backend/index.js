@@ -22,6 +22,9 @@ const dashboardRoute = require("./Routes/dashboard.route")
 const userordersRoute = require("./Routes/userorders.route")
 const reviewRoute = require("./Routes/review.route")
 
+app.use("/", (req, res) => {
+    res.send("Welcome to the backend of the online shopping website")
+})
 app.use("/api/user", userRoute)
 app.use("/api/product", productRoute)
 app.use("/api/category", categoryRoute)
